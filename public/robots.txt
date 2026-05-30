@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block secret admin panel from all crawlers
+Disallow: /portal-rahasia-admin-exim
+Disallow: /api/
+
+# Block crawling of filter/search param URLs to prevent duplicate content
+Disallow: /?keyword=
+Disallow: /?location=
+
+Sitemap: https://jobs.pintarexim.com/sitemap.xml
